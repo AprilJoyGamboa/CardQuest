@@ -73,8 +73,50 @@ class Command(BaseCommand):
         card20 = PokemonCard(name= "Deoxys",rarity= "Rare",hp= 50,card_type= "Pyschic",attack= "Cosmic Power",
                             description= "An alien-like, bipedal Pokemon that has four forms. Each focused on a different stat." ,
                             weakness= "Dark" ,card_number= 186 ,release_date="2004-11-18", evolution_stage= "Basic" ,abilities= "Pressure")
+        card21 = PokemonCard(name="Bulbasaur",rarity= "Rare",hp= 45,card_type= "Grass",attack= "Razor Leaf",
+                            description= "A small, quadrupedal Pokemon that has blue-green skin with darker patches." ,
+                            weakness= "Fire" ,card_number= 1 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Overgrow")
+        card22 = PokemonCard(name="Charizard",rarity= "Rare",hp= 120,card_type= "Fire",attack= "Flamethrower",
+                            description= "A draconic, bipedal Pokemon. It is primarily orange with a cream underside from the chest to the tip of its tail." ,
+                            weakness= "Water" ,card_number= 6 ,release_date= "1996-02-27", evolution_stage= "Final Form" ,abilities= "Blaze")
+        card23 = PokemonCard(name="Blastoise",rarity= "Rare",hp= 120,card_type= "Water",attack= "Hydro Pump",
+                            description= "A large, bipedal turtle-like Pokemon. Its body is blue and is mostly hidden by its tough, brown shell." ,
+                            weakness= "Grass" ,card_number= 9 ,release_date= "1996-02-27", evolution_stage= "Final Form" ,abilities= "Torrent")
+        card24 = PokemonCard(name="Butterfree",rarity= "Rare",hp= 70,card_type= "Bug",attack= "Gust",
+                            description= "A large, butterfly-like Pokemon with two pairs of wings." ,
+                            weakness= "Fire" ,card_number= 12 ,release_date= "1996-02-27", evolution_stage= "Final Form" ,abilities= "Compound Eyes")
+        card25 = PokemonCard(name="Metapod",rarity= "Common",hp= 50,card_type= "Bug",attack= "Harden",
+                            description= "A green chrysalis with a dome-like structure on its back." ,
+                            weakness= "Fire" ,card_number= 11 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Shed Skin")
+        card26 = PokemonCard(name="Pidgey",rarity= "Common",hp= 40,card_type= "Normal",attack= "Gust",
+                            description= "A small, plump-bodied avian Pokemon." ,
+                            weakness= "Electric" ,card_number= 16 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Keen Eye")
+        card27 = PokemonCard(name="Rattata",rarity= "Common",hp= 30,card_type= "Normal",attack= "Tackle",
+                            description= "A small, quadrupedal rodent Pokemon." ,
+                            weakness= "Fighting" ,card_number= 19 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Guts")
+        card28 = PokemonCard(name="Spearow",rarity= "Common",hp= 40,card_type= "Normal",attack= "Peck",
+                            description= "A small, brown, avian Pokemon with cream-colored underparts." ,
+                            weakness= "Electric" ,card_number= 21 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Keen Eye")
+        card29 = PokemonCard(name="Ekans",rarity= "Common",hp= 40,card_type= "Poison",attack= "Poison Sting",
+                            description= "A purple, serpentine Pokemon." ,
+                            weakness= "Psychic" ,card_number= 23 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Intimidate")
+        card30 = PokemonCard(name="Pikachu",rarity= "Rare",hp= 60,card_type= "Electric",attack= "Thunder Shock",
+                            description= "A mouse-like pokemon that can generate electricity." ,
+                            weakness= "Ground" ,card_number= 25 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Static")
+        card31 = PokemonCard(name="Sandshrew",rarity= "Common",hp= 60,card_type= "Ground",attack= "Scratch",
+                            description= "A bipedal, ground-dwelling pholidote Pokemon." ,
+                            weakness= "Water" ,card_number= 27 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Sand Veil")
+        card32 = PokemonCard(name="Nidoran",rarity= "Common",hp= 40,card_type= "Poison",attack= "Poison Sting",
+                            description= "A small, quadrupedal rodent-like Pokemon." ,
+                            weakness= "Psychic" ,card_number= 29 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Poison Point")
+        card33 = PokemonCard(name="Clefairy",rarity= "Common",hp= 50,card_type= "Fairy",attack= "Pound",
+                            description= "A small, bipedal Pokemon with a chubby, vaguely star-shaped body." ,
+                            weakness= "Steel" ,card_number= 35 ,release_date= "1996-02-27", evolution_stage= "Basic" ,abilities= "Cute Charm")
 
-        pokemon_cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15, card16, card17, card18, card19, card20]
+        pokemon_cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10,
+                        card11, card12, card13, card14, card15, card16, card17, card18, card19, card20,
+                        card21, card22, card23, card24, card25, card26, card27, card28, card29, card30,
+                        card31, card32, card33]
 
         for card in pokemon_cards:
             card.save()
