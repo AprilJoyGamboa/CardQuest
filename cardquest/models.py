@@ -64,3 +64,6 @@ class Collection(BaseModel):
     card = models.ForeignKey(PokemonCard, on_delete=models.CASCADE, null=True, blank=True)
     trainer = models.ForeignKey(Trainer, on_delete=models.CASCADE, null=True, blank=True)
     collection_date = models.DateField()
+
+    def __str__(self):
+        return self.trainer.name + " - " + self.card.name

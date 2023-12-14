@@ -8,9 +8,9 @@
             <div class="card">
                 <div class="card-type" id="{{ card.card_type|lower }}">
                     <div class="card-image" id="{{ card.card_type|lower }}-img">
-                    {% for pokemon in pokemon_data %}
+                    {% for pokemon in pokemon_data.pokemons %}
                         {% if pokemon.name == card.name %}
-                            <img src="{{ pokemon.image_url }}" alt="{{ pokemon.name }} Image">
+                        <img src="{{ pokemon.image_url }}" alt="{{ pokemon.name }} Image">
                         {% endif %}
                     {% endfor %}
                     </div>
