@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.list import ListView
 from cardquest.models import PokemonCard, Trainer, Collection
-from .forms import TrainerForm, CollectionForm
+from .forms import TrainerForm, CollectionForm, PokemonCardForm
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 import json
@@ -23,6 +23,7 @@ class PokemonCardListView(ListView):
     template_name = 'pokemoncards.html'
     # '/home/AprilJoyGamboa/CardQuest/data/pokemon_data.json'
     json_file_path = './data/pokemon_data.json'
+    paginate_by = 10
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -98,3 +99,24 @@ class CollectionDeleteView(DeleteView):
     model = Collection
     template_name = 'collection_del.html'
     success_url = reverse_lazy('collection-list')
+
+
+class PokemonCardCreateView(CreateView):
+    model = PokemonCard
+    form_class = PokemonCardForm
+    template_name = 'pokemoncard_add.html'
+    success_url = reverse_lazy('pokemoncard-list')
+
+
+class PokemonCardUpdateView(UpdateView):
+    model = PokemonCard
+    form_class = PokemonCardForm
+    template_name = 'pokemoncard_edit.html'
+    success_url = reverse_lazy('pokemoncard-list')
+
+
+class PokemonCardDeleteView(DeleteView):
+    model = PokemonCard
+    template_name = 'pokemoncard_del.html'
+    success_url = reverse_lazy('pokemoncard-list')
+
