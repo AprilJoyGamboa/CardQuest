@@ -21,6 +21,7 @@ class PokemonCardListView(ListView):
     model = PokemonCard
     context_object_name = 'pokemoncard'
     template_name = 'pokemoncards.html'
+    # '/home/AprilJoyGamboa/CardQuest/data/pokemon_data.json'
     json_file_path = './data/pokemon_data.json'
 
     def get_context_data(self, **kwargs):

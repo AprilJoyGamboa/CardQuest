@@ -17,6 +17,7 @@ body {
 }
 
 main {
+  min-height: 130vh;
   padding-top: 60px;
   padding-bottom: 60px; /* Adjust as needed */
 }
@@ -78,6 +79,7 @@ footer {
   border-collapse: collapse;
   margin: 1%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   /* align-items: center; */
 }
@@ -118,6 +120,7 @@ footer {
   border-collapse: collapse;
   margin: 1%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
